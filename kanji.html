@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean's Japanese - Kanji</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="mobile__nav">
+            <input type="checkbox" class="navigation__checkbox" name="navigation__checkbox" id="navi-toggle"
+                autocomplete="off">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background"></div>
+            <nav class="main__nav">
+                <ul class="nav__list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hiragana.html">Hiragana</a></li>
+                    <li><a href="katakana.html">Katakana</a></li>
+                    <li><a href="kanji.html" class="active">Kanji</a></li>
+                    <li><a href="sentences.html">Sentences</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="desktop__nav">
+            <nav class="main__nav">
+                <ul class="nav__list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hiragana.html">Hiragana</a></li>
+                    <li><a href="katakana.html">Katakana</a></li>
+                    <li><a href="kanji.html" class="active">Kanji</a></li>
+                    <li><a href="sentences.html">Sentences</a></li>
+                </ul>
+                <ul class="logo">
+                    <li>シオーン</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Kanji</h2>
+        <h3>Kanji characters are shorthand writings of common phrases you see in the world. They strip down long written sentences made up of many hiragana characters into just a couple of characters. It's useful since Japanese writing has no spaces and the Kanji helps isolate specific words.</h3>
+        <div class="letter__grid">
+            <div class="letter">
+                <p class="letter--sub">わたし</p>
+                <p class="letter--top">私</p>
+            </div>
+            <div class="letter">
+                <p class="letter--sub">せんせい</p>
+                <p class="letter--top">先生</p>
+            </div>
+            <div class="letter">
+                <p class="letter--sub">がくせい</p>
+                <p class="letter--top">学生</p>
+            </div>
+            <div class="letter">
+                <p class="letter--sub">なまえ</p>
+                <p class="letter--top">名前</p>
+            </div>
+            <div class="letter">
+                <p class="letter--sub">にほん</p>
+                <p class="letter--top">日本</p>
+            </div>
+            <div class="letter">
+                <p class="letter--sub">じん</p>
+                <p class="letter--top">人</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Made by Sean Murtagh</p>
+        <div class="theme__switcher">
+            <label class="switch" for="theme">
+                <span class="ld">Light/Dark</span>
+                <input type="checkbox" name="theme" id="theme" onClick="toggleTheme()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
