@@ -7,7 +7,11 @@
     --main-night-bg-color: #323232;
     --main-darker-text-color: #334d7a;
 }
+html, .logo {
+    background-color: var(--main-night-bg-color);
+}
 * {
+    color: var(--main-light-bg-color);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
