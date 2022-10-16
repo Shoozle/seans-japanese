@@ -243,6 +243,13 @@ h3 {
     width: 100%;
     margin-top: 2rem;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.kanji__letter__grid {
+    width: 100%;
+    margin-top: 2rem;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -253,9 +260,18 @@ h3 {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.letter {
+.letter, .kanji__letter {
     display: flex;
     flex-direction: column;
+}
+
+.letter { 
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.kanji__letter {
     margin-bottom: 1.5rem;
     margin-right: .5rem;
     margin-left: .5rem;
