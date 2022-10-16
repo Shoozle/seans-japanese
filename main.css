@@ -243,7 +243,7 @@ h3 {
     width: 100%;
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .letter__grid--small {
@@ -255,24 +255,46 @@ h3 {
 
 .letter {
     display: flex;
-    align-items: center;
     flex-direction: column;
     margin-bottom: 1.5rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    background-color: #607baa;
+    border-radius: 20px;
+    padding: .6rem .9rem;
 }
 
 .letter--sub {
     font-size: 2rem;
 }
 
-.letter--top {
+.kanji--top, .english--top {
+    align-self: center;
+}
+.kanji--top {
     font-size: 4rem;
+}
+
+.english--top {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.vocab {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.vocab--top {
+    font-weight: bold;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     padding: 1rem 1.4rem;
-    max-width: 1100px;
+    max-width: 1300px;
 }
 
 .wrapper p{
@@ -449,5 +471,15 @@ footer .label-flex {
     }
     .ld {
         right: 6rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .letter__grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 820px) {
+    .letter__grid{
+        grid-template-columns: 1fr;
     }
 }
