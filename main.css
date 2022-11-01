@@ -203,6 +203,10 @@ ul {
     color: var(--main-primary-text-color);
 }
 
+.main__nav {
+    border-bottom: 2px solid var(--main-night-bg-color);
+}
+
 .desktop__nav .main__nav ul li a.active {
     background-color: var(--main-secondary-text-color);
 }
